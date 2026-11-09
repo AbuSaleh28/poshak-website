@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Luxury Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121214" />
+      <stop offset="100%" stop-color="#1E1E24" />
+    </linearGradient>
+
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#F3E5AB" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA771C" />
+      <stop offset="100%" stop-color="#F9F1D9" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="luxuryShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" fill="url(#bgGradient)" rx="16" />
+
+  <!-- Geometric Outer Frame -->
+  <g transform="translate(400, 250)" opacity="0.4">
+    <circle cx="0" cy="0" r="215" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="205" fill="none" stroke="url(#goldGradient)" stroke-width="1" />
+    <path d="M -215 -15 L -215 -215 L -15 -215" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M 215 15 L 215 215 L 15 215" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+  </g>
+
+  <!-- Brand Symbol & Typography -->
+  <g text-anchor="middle">
+    
+    <!-- Clothing Hanger / Monogram Mark -->
+    <g transform="translate(400, 145) scale(1.1)" filter="url(#luxuryShadow)">
+      <path d="M 0 -35 L 35 15 C 35 25 25 30 0 30 C -25 30 -35 25 -35 15 Z" fill="none" stroke="url(#goldGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M 0 -35 C 0 -45 10 -50 15 -45 C 20 -40 10 -35 0 -35" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="0" y1="-15" x2="0" y2="18" stroke="url(#goldGradient)" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+      <polygon points="0,-52 -4,-48 0,-44 4,-48" fill="url(#goldGradient)" />
+    </g>
+
+    <!-- Urdu Brand Name: پوشاک -->
+    <text x="400" y="275" font-family="&#39;Jameel Noori Nastaleeq&#39;, &#39;Noto Nastaliq Urdu&#39;, &#39;Nafees Nastaleeq&#39;, &#39;Urdu Typesetting&#39;, serif" font-weight="bold" font-size="82" fill="url(#goldGradient)" filter="url(#luxuryShadow)" text-anchor="middle">پوشاک</text>
+
+    <!-- English Subtitle -->
+    <text x="400" y="342" font-family="&#39;Times New Roman&#39;, Times, serif" font-weight="600" font-size="18" letter-spacing="10" fill="#C5C5CE" text-anchor="middle">POWSHAK</text>
+
+    <!-- Divider -->
+    <g transform="translate(400, 372)">
+      <line x1="-50" y1="0" x2="50" y2="0" stroke="url(#goldGradient)" stroke-width="1.5" opacity="0.5" />
+      <circle cx="0" cy="0" r="3" fill="url(#goldGradient)" />
+    </g>
+
+    <!-- Tagline -->
+    <text x="400" y="402" font-family="&#39;Times New Roman&#39;, Times, serif" font-weight="normal" font-size="11" letter-spacing="6" fill="#8E8E99" text-anchor="middle">EST. LUXURY ATTIRE</text>
+
+  </g>
+</svg>
